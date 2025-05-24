@@ -186,6 +186,27 @@ a {
 .sobre-img img {
     height: 280px;
     box-shadow: var(--shadow);
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+@media (max-width: 1200px) {
+    .sobre-img img {
+        height: 240px;
+    }
+}
+@media (max-width: 768px) {
+    .sobre-img {
+        grid-template-columns: 1fr;
+    }
+    .sobre-img img {
+        height: 200px;
+    }
+}
+@media (min-width: 1600px) {
+    .sobre-img img {
+        height: 320px;
+    }
 }
 /* ===== Carapio ===== */
 .menu-grid {
